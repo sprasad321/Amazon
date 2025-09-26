@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: java-app
-          path: target/*.jar   # Corrected path (no quotes)
+          path: Amazon/target/*.jar   # Corrected path (no quotes)
 
   deploy:
     runs-on: ubuntu-latest
@@ -63,4 +63,5 @@ jobs:
           slot-name: 'Production'
           package: 'java-app/*.jar'
           
+
 
